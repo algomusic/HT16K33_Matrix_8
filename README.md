@@ -1,10 +1,10 @@
 # HT16K33_Matrix_8
 
-Non-blocking Arduino driver for an 8x8 LED matrix driven by the Holtek HT16K33 I2C controller. Designed for the ESP32-S3 with ArduinoCore V3, but compatible with any Arduino-supported board.
+Non-blocking Arduino driver for an 8x8 LED matrix driven by the Holtek HT16K33 I2C controller. Designed for the ESP32 with ArduinoCore V3, but compatible with any Arduino-supported board.
 
 ## Features
 
-- Configurable I2C pins (essential for ESP32-S3 where any GPIO can be I2C)
+- Configurable I2C pins (essential for ESP32 where any GPIO can be I2C)
 - Buffered framebuffer - pixel operations are instant, `write()` pushes to hardware
 - Individual pixel set / get / toggle
 - Bulk row, column, fill, and clear operations
@@ -28,7 +28,7 @@ Four font headers are included, each with a `_getGlyph()` data function and a `_
 | `HT16K33_FontFull.h` | ASCII 32-122 (A-Z, a-z, 0-9, punctuation) | Variable width, 8px tall | Column bytes for `drawColumns()` / `shiftLeft()` | `fontFull_drawChar(matrix, ch, startCol)` |
 | `HT16K33_FontDigits4x8.h` | 0-9 | 4 cols, 8px tall | Column bytes, two digits fill 8 columns | `fontDigits4x8_drawDigit(matrix, digit, startCol)` |
 
-The 4x4 fonts divide the display into four quadrants (top-left, top-right, bottom-left, bottom-right) for showing up to 4 characters at once. The full-height fonts use the entire 8-row display for scrolling text or large numerals.
+The 4x4 fonts allow the dividing of the display into four quadrants (top-left, top-right, bottom-left, bottom-right) for showing up to 4 characters at once. The full-height fonts use the entire 8-row display for scrolling text or large numerals.
 
 ## Hardware
 
