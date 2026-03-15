@@ -1,0 +1,39 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+HT16K33_Matrix_8	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+setBrightness	KEYWORD2
+setBlinkRate	KEYWORD2
+displayOn	KEYWORD2
+displayOff	KEYWORD2
+setPixel	KEYWORD2
+getPixel	KEYWORD2
+togglePixel	KEYWORD2
+setRow	KEYWORD2
+getRow	KEYWORD2
+setColumn	KEYWORD2
+fill	KEYWORD2
+clear	KEYWORD2
+shiftLeft	KEYWORD2
+drawBitmap4x4	KEYWORD2
+drawColumns	KEYWORD2
+write	KEYWORD2
+tinyTalk_drawChar	KEYWORD2
+font3x3_drawChar	KEYWORD2
+fontFull_drawChar	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+HT16K33_DEFAULT_ADDR	LITERAL1
+HT16K33_BLINK_OFF	LITERAL1
+HT16K33_BLINK_2HZ	LITERAL1
+HT16K33_BLINK_1HZ	LITERAL1
+HT16K33_BLINK_0_5HZ	LITERAL1
+HT16K33_MATRIX_ROWS	LITERAL1
+HT16K33_MATRIX_COLS	LITERAL1
